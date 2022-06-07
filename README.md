@@ -17,7 +17,7 @@ Now it should look like this.
 
 # That's it!
 
-Now you have the same mpv setup as mine, with my keybinds, shaders, scripts and their configs.
+You have the same mpv setup as mine, with my keybinds, shaders, scripts and their configs.
 
 Now you need to configure some files.
 
