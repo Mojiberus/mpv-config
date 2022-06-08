@@ -53,7 +53,7 @@ For example, if you have a video named `Episode 1.mp4` and a folder with any nam
 
 ### Set up input.conf
 
-The first thing you should learn are default keybinds for mpv. Default keybinds are stored in `mpv-XXXXXX/doc/mpbindings.png` which is brief overview. Full list of kenbinds. 
+The first thing you should learn are default keybinds for mpv. Default keybinds are stored in `mpv-XXXXXX/doc/mpbindings.png` which is brief overview. Full list of kenbinds can be viewed here https://mpv.io/manual/stable/#keyboard-control. 
 
 Keybinds which are set in `input.conf` will override their respective default.
 
