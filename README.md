@@ -41,7 +41,7 @@ Now pay attention to `hwdec` and `hwdec=auto` lines. You might need to configure
 
 `screenshot-template=` tells mpv how screenshot should be named when you take it with s/S. Refer to https://mpv.io/manual/stable/#options-screenshot-template to set it up as you need.
 
-`screenshot-directory='C:\Users\Mojiberus\Pictures\mpv'` tells mpv where screenshots should be saved after taking. Set it up to your own folder or remove it to automatically save screenshots on your desktop.
+`screenshot-directory='C:\Users\Mojiberus\Pictures\mpv'` tells mpv where screenshots should be saved after taking. Set it up to your own folder or remove it to save screenshots on your desktop.
 
 `screeshot-format=png` use .png file format for screenshots you take. Pick one of these: `png` `jpg` `jpeg` `webp`.
 
