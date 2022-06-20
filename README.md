@@ -79,7 +79,9 @@ If you have layouts other than en-US and ru-RU, then you need to make a copy of 
 
 `Keypad 2` will restart video.
 
-`End` will fast-forward 90 seconds. Useful to skip anime OP.
+`Keypad 7` will decrease volume by 10, and `Keypad 9` will increase by 10.
+
+`End` will fast-forward ~90 seconds. Useful to skip anime OP.
 
 #### Anime4K
 
