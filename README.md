@@ -45,7 +45,7 @@ Now pay attention to `hwdec` and `hwdec=auto` lines. You might need to configure
 
 `screeshot-format=png` use .png file format for screenshots you take. Pick one of these: `png` `jpg` `jpeg` `webp`.
 
-`sub-file-paths=` is used with `fuzzydir` script, which will recursively load subs from subfolders where video is placed. `**` at the end of the path is required to recursively.
+`sub-file-paths=` is used with `fuzzydir` script, which will recursively load subs from subfolders where video is placed. `**` at the end of the path is required to search subtitles recursively.
 
 Set it up to your folder where you store videos with subs.
 
@@ -53,7 +53,7 @@ For example, if you have a video named `Episode 1.mp4` and a folder with any nam
 
 ### Set up input.conf
 
-The first thing you should learn are default keybinds for mpv. Default keybinds are stored in `mpv-XXXXXX/doc/mpbindings.png` which is brief overview. Full list of kenbinds can be viewed here https://mpv.io/manual/stable/#keyboard-control. 
+The first thing you should learn are default keybinds for mpv. Default keybinds are stored in `mpv-XXXXXX/doc/mpbindings.png` which is brief overview. Full list of keybinds can be viewed here https://mpv.io/manual/stable/#keyboard-control. 
 
 Keybinds which are set in `input.conf` will override their respective default.
 
