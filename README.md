@@ -33,19 +33,19 @@ Open `portable_config/mpv.conf` with text editor like VSC/VS/NP++.
 
 If you don't need it, remove the line. If you need it, check yt-dlp+mpv installation.
 
-`gpu-api=` controls which type of graphics APIs will be accepted. You need to pick one of these: `auto` `opengl` `vulkan` `d3d11`.
+`gpu-api=` controls which type of graphics APIs will be used. You need to pick one of these: `auto` `opengl` `vulkan` `d3d11`.
 
-Now pay attention to `hwdec` and `hwdec=auto` lines. You might need to configure them according to https://mpv.io/manual/stable/#options-hwdec. If you're not sure what are you setting up here, leave it as I set up.
+Now pay attention to `hwdec` and `hwdec=auto` lines. You might need to configure them according to https://mpv.io/manual/stable/#options-hwdec. If you're not sure what are you setting up here, leave it.
 
 `volume=80` sets default audio volume to 80 when you open a video. Use any value you prefer.
 
-`screenshot-template=` tells mpv how screenshot should be named when you take it with s/S. Refer to https://mpv.io/manual/stable/#options-screenshot-template to set it up as you need.
+`screenshot-template=` tells mpv how screenshot should be named when you take it with s/S. Refer to https://mpv.io/manual/stable/#options-screenshot-template to set it up as you need. In my config it names based on `File name` `Hour padded with 0 to two digits`-`Minutes`-`Seconds`.`Milliseconds`
 
-`screenshot-directory='C:\Users\Mojiberus\Pictures\mpv'` tells mpv where screenshots should be saved after taking. Set it up to your own folder or remove it to save screenshots on your desktop.
+`screenshot-directory=` tells mpv where screenshots should be saved after taking. Set it up to your own folder or remove it to save screenshots on your desktop.
 
 `screeshot-format=png` use .png file format for screenshots you take. Pick one of these: `png` `jpg` `jpeg` `webp`.
 
-`sub-file-paths="C:\Users\Mojiberus\Videos\**"` is used with `fuzzydir` script, which will recursively load subs from subfolders where video is placed.
+`sub-file-paths=` is used with `fuzzydir` script, which will recursively load subs from subfolders where video is placed. `**` at the end of the path is required to recursively.
 
 Set it up to your folder where you store videos with subs.
 
@@ -59,11 +59,13 @@ Keybinds which are set in `input.conf` will override their respective default.
 
 My `input.conf` contains a duplicate for ru-RU layout. 
 
-Keybinds are case and input layout sensitive. That means pressing `w` won't do the same as `W`, `ц` or `Ц` if of course you didn't set them to same action.
+Keybinds are case and input layout sensitive. That means pressing `w` won't do the same as `W`, `ц` or `Ц` unless you didn't set them to same action.
 
 If you have layouts other than en-US and ru-RU, then you need to make a copy of `ru-RU Layout fix + my kenbinds`, paste it and replace all ru-RU keybinds with your layout.
 
 ## Now I'll explain what my keybinds do
+
+Please note that I'm using en-US and ru-RU layouts on Windows 10, so differences may appear based on OS or language variation layout (e.g. en-GB or OS X)
 
 `Right` will fast-forward 5 seconds, and `Left` will rewind 5 seconds.
 
@@ -81,11 +83,13 @@ If you have layouts other than en-US and ru-RU, then you need to make a copy of 
 
 `Keypad 7` will decrease volume by 10, and `Keypad 9` will increase by 10.
 
+`Keypad 1` will rewind ~10 seconds, and `Keypad 3` will fast-forward 10 seconds
+
 `End` will fast-forward ~90 seconds. Useful to skip anime OP.
 
 #### Anime4K
 
-These keybinds are used to increase video quality using Anime4K shaders. As it comes from the name, it's for anime. 
+These keybinds are used to increase video quality using Anime4K shaders. As it comes from the name, it's intended for anime. 
 
 These keybinds are for low-end GPUs. If you have a high-end GPU, then replace them with https://github.com/bloc97/Anime4K/blob/master/md/GLSL_Instructions_Windows.md#optimized-shaders-for-higher-end-gpu.
 
@@ -96,5 +100,3 @@ These keybinds are for low-end GPUs. If you have a high-end GPU, then replace th
 # Good job!
 
 You made your mpv build based on mine. 
-
-I will update `mpv.conf` and `input.conf` separately from `portable_config.7z` when I change them. 
